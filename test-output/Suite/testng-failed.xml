@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testpkg.producttest_swag">
+        <methods>
+          <include name="logo"/>
+          <include name="browserlaunch"/>
+          <include name="updateReport"/>
+          <include name="setupreport"/>
+          <include name="closeReport"/>
+        </methods>
+      </class> <!-- testpkg.producttest_swag -->
+      <class name="testpkg.Carttest_swag">
+        <methods>
+          <include name="browserlaunch"/>
+          <include name="updateReport"/>
+          <include name="setupreport"/>
+          <include name="closeReport"/>
+          <include name="cartvalidation"/>
+        </methods>
+      </class> <!-- testpkg.Carttest_swag -->
+      <class name="testpkg.logintest_swag">
+        <methods>
+          <include name="browserlaunch"/>
+          <include name="logintest" invocation-numbers="0 1 2"/>
+          <include name="updateReport"/>
+          <include name="setupreport"/>
+          <include name="closeReport"/>
+        </methods>
+      </class> <!-- testpkg.logintest_swag -->
+      <class name="testpkg.checkouttest_swag">
+        <methods>
+          <include name="browserlaunch"/>
+          <include name="checkoutvalidation"/>
+          <include name="updateReport"/>
+          <include name="setupreport"/>
+          <include name="closeReport"/>
+        </methods>
+      </class> <!-- testpkg.checkouttest_swag -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

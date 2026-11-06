@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="6" failed="6" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-11-05T10:19:47 PST" name="Suite" finished-at="2026-11-05T10:20:56 PST" duration-ms="68275">
+    <groups>
+    </groups>
+    <test started-at="2026-11-05T10:19:47 PST" name="Test" finished-at="2026-11-05T10:20:56 PST" duration-ms="68275">
+      <class name="testpkg.checkouttest_swag">
+        <test-method signature="checkoutvalidation()[pri:0, instance:testpkg.checkouttest_swag@41a2befb]" started-at="2026-11-05T10:20:56 PST" name="checkoutvalidation" finished-at="2026-11-05T10:20:56 PST" duration-ms="22" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="user-name"]"}
+  (Session info: chrome=156.0.8078.74)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3dec82c7d008d599f89a1ae9ef9c922a, findElement {using=xpath, value=//*[@id="user-name"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.74, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59010}, goog:processID: 16628, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59010/devtoo..., se:cdpVersion: 156.0.8078.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3dec82c7d008d599f89a1ae9ef9c922a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="user-name"]"}
+  (Session info: chrome=156.0.8078.74)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3dec82c7d008d599f89a1ae9ef9c922a, findElement {using=xpath, value=//*[@id="user-name"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.74, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59010}, goog:processID: 16628, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59010/devtoo..., se:cdpVersion: 156.0.8078.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3dec82c7d008d599f89a1ae9ef9c922a
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:653)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:417)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:411)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
+at pagepkg_swagmini.loginpage_swag.setvalues(loginpage_swag.java:34)
+at testpkg.checkouttest_swag.checkoutvalidation(checkouttest_swag.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutvalidation -->
+      </class> <!-- testpkg.checkouttest_swag -->
+      <class name="testpkg.producttest_swag">
+        <test-method signature="logo()[pri:1, instance:testpkg.producttest_swag@7d20d0b]" started-at="2026-11-05T10:19:57 PST" name="logo" finished-at="2026-11-05T10:20:02 PST" duration-ms="5446" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".\.app_logo"}
+  (Session info: chrome=156.0.8078.74)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3dec82c7d008d599f89a1ae9ef9c922a, findElement {using=class name, value=.app_logo}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.74, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59010}, goog:processID: 16628, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59010/devtoo..., se:cdpVersion: 156.0.8078.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3dec82c7d008d599f89a1ae9ef9c922a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".\.app_logo"}
+  (Session info: chrome=156.0.8078.74)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3dec82c7d008d599f89a1ae9ef9c922a, findElement {using=class name, value=.app_logo}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.74, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59010}, goog:processID: 16628, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59010/devtoo..., se:cdpVersion: 156.0.8078.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3dec82c7d008d599f89a1ae9ef9c922a
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:653)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:67)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:417)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:411)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.isDisplayed(Unknown Source)
+at testpkg.producttest_swag.logo(producttest_swag.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logo -->
+        <test-method signature="additemstocart()[pri:2, instance:testpkg.producttest_swag@7d20d0b]" started-at="2026-11-05T10:20:02 PST" name="additemstocart" finished-at="2026-11-05T10:20:56 PST" duration-ms="53418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- additemstocart -->
+      </class> <!-- testpkg.producttest_swag -->
+      <class name="testpkg.Carttest_swag">
+        <test-method signature="cartvalidation()[pri:0, instance:testpkg.Carttest_swag@77f1baf5]" started-at="2026-11-05T10:20:56 PST" name="cartvalidation" finished-at="2026-11-05T10:20:56 PST" duration-ms="28" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="user-name"]"}
+  (Session info: chrome=156.0.8078.74)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3dec82c7d008d599f89a1ae9ef9c922a, findElement {using=xpath, value=//*[@id="user-name"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.74, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59010}, goog:processID: 16628, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59010/devtoo..., se:cdpVersion: 156.0.8078.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3dec82c7d008d599f89a1ae9ef9c922a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="user-name"]"}
+  (Session info: chrome=156.0.8078.74)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3dec82c7d008d599f89a1ae9ef9c922a, findElement {using=xpath, value=//*[@id="user-name"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.74, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59010}, goog:processID: 16628, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59010/devtoo..., se:cdpVersion: 156.0.8078.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3dec82c7d008d599f89a1ae9ef9c922a
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:653)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:417)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:411)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
+at pagepkg_swagmini.loginpage_swag.setvalues(loginpage_swag.java:34)
+at testpkg.Carttest_swag.cartvalidation(Carttest_swag.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cartvalidation -->
+      </class> <!-- testpkg.Carttest_swag -->
+      <class name="testpkg.logintest_swag">
+        <test-method is-config="true" signature="setupreport()[pri:0, instance:testpkg.logintest_swag@544fa968]" started-at="2026-11-05T10:19:47 PST" name="setupreport" finished-at="2026-11-05T10:19:47 PST" duration-ms="435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupreport -->
+        <test-method is-config="true" signature="browserlaunch()[pri:0, instance:testpkg.logintest_swag@544fa968]" started-at="2026-11-05T10:19:47 PST" name="browserlaunch" finished-at="2026-11-05T10:19:53 PST" duration-ms="5129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserlaunch -->
+        <test-method signature="logintest(java.lang.String,java.lang.String)[pri:1, instance:testpkg.logintest_swag@544fa968]" started-at="2026-11-05T10:19:54 PST" name="logintest" data-provider="loginData" finished-at="2026-11-05T10:19:55 PST" duration-ms="868" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[anu]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[anu123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login failed for: anu]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login failed for: anu
+at org.testng.Assert.fail(Assert.java:111)
+at testpkg.logintest_swag.logintest(logintest_swag.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method signature="logintest(java.lang.String,java.lang.String)[pri:1, instance:testpkg.logintest_swag@544fa968]" started-at="2026-11-05T10:19:55 PST" name="logintest" data-provider="loginData" finished-at="2026-11-05T10:19:55 PST" duration-ms="452" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[maya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[maya1234]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login failed for: maya]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login failed for: maya
+at org.testng.Assert.fail(Assert.java:111)
+at testpkg.logintest_swag.logintest(logintest_swag.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method signature="logintest(java.lang.String,java.lang.String)[pri:1, instance:testpkg.logintest_swag@544fa968]" started-at="2026-11-05T10:19:55 PST" name="logintest" data-provider="loginData" finished-at="2026-11-05T10:19:56 PST" duration-ms="533" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login failed for: locked_out_user]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login failed for: locked_out_user
+at org.testng.Assert.fail(Assert.java:111)
+at testpkg.logintest_swag.logintest(logintest_swag.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method signature="logintest(java.lang.String,java.lang.String)[pri:1, instance:testpkg.logintest_swag@544fa968]" started-at="2026-11-05T10:19:56 PST" name="logintest" data-provider="loginData" finished-at="2026-11-05T10:19:56 PST" duration-ms="457" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[problem_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method signature="logoverification()[pri:2, instance:testpkg.logintest_swag@544fa968]" started-at="2026-11-05T10:19:56 PST" name="logoverification" finished-at="2026-11-05T10:19:56 PST" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoverification -->
+        <test-method signature="buttontextvalidation()[pri:3, instance:testpkg.logintest_swag@544fa968]" started-at="2026-11-05T10:19:56 PST" name="buttontextvalidation" finished-at="2026-11-05T10:19:57 PST" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buttontextvalidation -->
+        <test-method signature="placeholdervalidation()[pri:4, instance:testpkg.logintest_swag@544fa968]" started-at="2026-11-05T10:19:57 PST" name="placeholdervalidation" finished-at="2026-11-05T10:19:57 PST" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeholdervalidation -->
+        <test-method signature="fetchtitlle()[pri:5, instance:testpkg.logintest_swag@544fa968]" started-at="2026-11-05T10:19:57 PST" name="fetchtitlle" finished-at="2026-11-05T10:19:57 PST" duration-ms="87" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchtitlle -->
+        <test-method is-config="true" signature="updateReport(org.testng.ITestResult)[pri:0, instance:testpkg.logintest_swag@544fa968]" started-at="2026-11-05T10:20:56 PST" name="updateReport" finished-at="1969-12-31T16:00:00 PST" duration-ms="-1793902856248" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated updateReport.
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @AfterTest annotated updateReport.
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:442)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:347)
+at org.testng.internal.Parameters.createParameters(Parameters.java:699)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.afterRun(TestRunner.java:845)
+at org.testng.TestRunner.run(TestRunner.java:618)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateReport -->
+        <test-method is-config="true" signature="closeReport()[pri:0, instance:testpkg.logintest_swag@544fa968]" started-at="2026-11-05T10:20:56 PST" name="closeReport" finished-at="2026-11-05T10:20:56 PST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeReport -->
+      </class> <!-- testpkg.logintest_swag -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
